@@ -27,6 +27,7 @@ export default class DiceRollerController {
             rolls.push({
                 roll: roll,
                 value: value,
+                mod: this.perDiceModifier,
                 nat1: roll === 1 && this.selectedDice === 20,
                 nat20: roll === 20 && this.selectedDice === 20
             });
@@ -34,6 +35,7 @@ export default class DiceRollerController {
 
         this.values.push({
             total: total + this.totalModifier,
+            mod: this.totalModifier,
             rolls: rolls
         });
 

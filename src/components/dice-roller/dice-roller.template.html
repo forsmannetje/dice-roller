@@ -58,11 +58,11 @@
                             'label-success': roll.nat20,
                             'label-info': !(roll.nat1 || roll.nat20)
                           }">
-                        {{ roll.roll }} + {{ diceRollerCtrl.perDiceModifier }}
+                        {{ roll.roll }} + {{ roll.mod }}
                     </span>
                     <span>+</span>
                 </span>
-                <span class="label label-default">{{ diceRollerCtrl.totalModifier }}</span>
+                <span class="label label-default">{{ total.mod }}</span>
             </li>
         </ol>
     </div>
