@@ -1,0 +1,19 @@
+<div class="row" data-ng-repeat="dice in diceManagerCtrl.dices track by $index">
+    <dice-roller data-index="$index"></dice-roller>
+</div>
+<div class="row roll-all">
+    <div class="col-xs-12 col-lg-3">
+        <button class="btn btn-primary col-xs-12" data-ng-click="diceManagerCtrl.rollAll()">Roll all</button>
+    </div>
+    <div class="col-xs-12 col-lg-3">
+        <button class="btn btn-warning col-xs-12" data-ng-click="diceManagerCtrl.resetAll()">Reset all</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-lg-3">
+        <button class="btn btn-success col-xs-12" data-ng-click="diceManagerCtrl.add()">Add die</button>
+    </div>
+    <div class="col-xs-12 col-lg-3" data-ng-if="diceManagerCtrl.dices.length > 1">
+        <button class="btn btn-danger col-xs-12" data-ng-click="diceManagerCtrl.remove()">Remove die</button>
+    </div>
+</div>

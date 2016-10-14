@@ -1,0 +1,16 @@
+.dice-roller {
+    padding: 15px 0;
+}
+.dice-roller .form-group {
+    display: inline-block;
+}
+.dice-roller .form-group .form-control {
+    display: inline-block;
+}
+.dice-roller .form-control.number-modifier {
+    width: 60px;
+}
+
+.dice-roller .results {
+    list-style: none;
+}
